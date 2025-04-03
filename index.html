@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5 Elements and Forms </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0fe479;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0b74e4;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        form {
+            margin-top: 20px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>HTML5 Elements </h1>
+
+<h2>Ordered List</h2>
+<ol type="I">
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+    <li>Item Four</li>
+    <li>Item Five</li>
+</ol>
+
+
+<h2>External Image</h2>
+<img src="plpimage.webp" alt="Sample Image" width="600" />
+
+<h2>Contact List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Martin Kuto</td>
+            <td>2130,Nakuru</td>
+            <td>+254 232 5784</td>
+            <td>kutomartin12@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Stacy Newton</td>
+            <td>298,Mombasa</td>
+            <td>+254 586 6697</td>
+            <td>stacynewton@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Kamau Ndiragu</td>
+            <td>22,Kisii</td>
+            <td>+254 474 4567</td>
+            <td>mjohnson@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Atieno</td>
+            <td>321,Kisumu</td>
+            <td>+254 594 4209</td>
+            <td>atienoemily@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Chrisin Munga</td>
+            <td>654, Eldoret</td>
+            <td>+254 324 5555</td>
+            <td>munga243@gmail.com</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Registration Form</h2>
+<form action="#" method="POST">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6" />
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">Select country</option>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="au">Australia</option>
+        <option value="in">India</option>
+    </select>
+
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label>
+    
+    <input type="radio" id="female" name="gender" value="female" required />
+    <label for="female">Female</label>
+    
+    <input type="radio" id="other" name="gender" value="other" required />
+    <label for="other">Other</label>
+
+    <p>Interests:</p>
+    <input type="checkbox" id="sports" name="interests" value="sports" />
+    <label for="sports">Sports</label>
+    
+    <input type="checkbox" id="music" name="interests" value="music" />
+    <label for="music">Music</label>
+    
+    <input type="checkbox" id="reading" name="interests" value="reading" />
+    <label for="reading">Reading</label>
+
+
+    <button type="submit">Register</button>
+</form>
+
+<h2>Audio Example</h2>
+<audio controls>
+    <source src="sample-audio.mp3" type="audio/mpeg" />
+</audio>
+
+<h2>Video Example</h2>
+<video width="600" controls>
+    <source src="videoplp.mp4"video/mp4" />
+</video>
+
+</body>
+</html>
