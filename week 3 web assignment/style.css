@@ -1,0 +1,35 @@
+
+#main-header {
+    color: blue; 
+    font-family: 'Arial', sans-serif; 
+    text-align: center;
+    margin: 10px 0; 
+    padding: 10px; 
+    border: 2px solid black; 
+}
+
+.text-paragraph {
+    color: black; 
+    font-size: 20px;
+    line-height: 1.6; 
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid darkcyan; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+    border-radius: 10px; 
+}
+
+/* Selector 4: Style the container (Class) */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    background-color: #ebd6d6; /* Light background color */
+}
